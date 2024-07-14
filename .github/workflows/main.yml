@@ -15,7 +15,7 @@ jobs:
 
     - name: SSH into EC2 and Prepare Target Directory
       uses: appleboy/ssh-action@v1.0.0
-       with:
+      with:
         host: ${{ secrets.EC2_HOST }}
         username: ${{ secrets.EC2_USERNAME }}
         key: ${{ secrets.EC2_SSH_KEY }}
